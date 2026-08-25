@@ -36,9 +36,13 @@
 
       <section class="listing-grid" aria-label="Ponuka garáže">
         <div class="gallery" aria-label="Fotky garáže">
-          <div class="main-photo" id="main-photo" role="img" aria-label="Fotka garáže bude doplnená">
+          <div class="main-photo" id="main-photo" role="button" tabindex="0" aria-label="Otvoriť fotku na celú obrazovku">
             <img id="main-photo-img" alt="" hidden />
             <span id="main-photo-empty">Fotka bude doplnená</span>
+            <button class="photo-arrow photo-arrow--prev" id="prev-photo" type="button" aria-label="Predchádzajúca fotka">
+            </button>
+            <button class="photo-arrow photo-arrow--next" id="next-photo" type="button" aria-label="Ďalšia fotka">
+            </button>
           </div>
           <div class="thumbs" id="thumbs"></div>
         </div>
@@ -61,7 +65,7 @@
             <small>Pri platbe vopred ušetríte <span id="yearly-saving">120</span> €.</small>
           </div>
 
-          <a id="call-button" class="call-button" href="tel:+421900000000">
+          <a id="call-button" class="call-button" data-call-source="pricing_button" href="tel:+421900000000">
             Zavolať <span id="phone-label">+421 905 308 966</span>
           </a>
         </aside>
@@ -95,7 +99,39 @@
           </div>
         </dl>
       </section>
+
+      <section class="map-section" aria-label="Mapa lokality garáže">
+        <iframe
+          id="map-frame"
+          class="map-frame"
+          title="Mapa lokality garáže"
+          loading="lazy"
+          referrerpolicy="no-referrer-when-downgrade"
+          src="https://www.google.com/maps?q=Ružinov,%20Ďatelinová%205530/10&output=embed"
+        ></iframe>
+      </section>
     </main>
+
+    <div class="lightbox" id="lightbox" hidden aria-modal="true" role="dialog" aria-label="Fotka garáže">
+      <button class="lightbox__close" id="close-lightbox" type="button" aria-label="Zavrieť fotku">×</button>
+      <button class="lightbox__arrow lightbox__arrow--prev" id="lightbox-prev" type="button" aria-label="Predchádzajúca fotka">
+      </button>
+      <img id="lightbox-img" alt="" />
+      <button class="lightbox__arrow lightbox__arrow--next" id="lightbox-next" type="button" aria-label="Ďalšia fotka">
+      </button>
+    </div>
+
+    <a
+      id="floating-call-button"
+      class="floating-call-button"
+      data-call-source="floating_button"
+      href="tel:+421900000000"
+      aria-label="Zavolať"
+    >
+      <svg aria-hidden="true" viewBox="0 0 24 24" width="24" height="24">
+        <path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6A19.79 19.79 0 0 1 2.12 4.18 2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.12.91.33 1.8.63 2.65a2 2 0 0 1-.45 2.11L8.02 9.75a16 16 0 0 0 6.23 6.23l1.27-1.27a2 2 0 0 1 2.11-.45c.85.3 1.74.51 2.65.63A2 2 0 0 1 22 16.92z" />
+      </svg>
+    </a>
 
     <script src="script.js"></script>
   </body>
