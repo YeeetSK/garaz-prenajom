@@ -1,0 +1,94 @@
+<!doctype html>
+<html lang="sk">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Garáž na prenájom</title>
+    <meta
+      name="description"
+      content="Jednoduchá ponuka garáže na prenájom s cenou, rozmermi a telefonickým kontaktom."
+    />
+    <link rel="icon" href="assets/favicon.svg" type="image/svg+xml" />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <main class="page">
+      <header class="listing-header">
+        <p class="listing-type" id="listing-type">Garáž na prenájom</p>
+        <h1 id="title">Garáž na prenájom</h1>
+        <p class="lead" id="description">
+          Jednoduchá garáž vhodná na parkovanie alebo uskladnenie vecí.
+        </p>
+        <div class="facts" aria-label="Základné údaje">
+          <span id="location">Doplniť lokalitu</span>
+          <span id="dimensions">5,50 × 2,80 m</span>
+          <span id="area">15,4 m²</span>
+        </div>
+      </header>
+
+      <section class="listing-grid" aria-label="Ponuka garáže">
+        <div class="gallery" aria-label="Fotky garáže">
+          <div class="main-photo" id="main-photo" role="img" aria-label="Fotka garáže bude doplnená">
+            <img id="main-photo-img" alt="" hidden />
+            <span id="main-photo-empty">Fotka bude doplnená</span>
+          </div>
+          <div class="thumbs" id="thumbs"></div>
+        </div>
+
+        <aside class="price-panel" aria-label="Cena a kontakt">
+          <div class="price-option">
+            <div>
+              <span class="price-label">Mesačne</span>
+              <p class="price-line"><strong id="monthly-price">150</strong> €</p>
+            </div>
+            <small>Platba každý mesiac</small>
+          </div>
+
+          <div class="price-option price-option--best">
+            <div class="price-head">
+              <span class="price-label">Ročne</span>
+              <span class="badge">1 mesiac zadarmo</span>
+            </div>
+            <p class="price-line"><strong id="yearly-price">1650</strong> €</p>
+            <small>Pri platbe vopred ušetríte <span id="yearly-saving">120</span> €.</small>
+          </div>
+
+          <a id="call-button" class="call-button" href="tel:+421900000000">
+            Zavolať <span id="phone-label">+421 905 308 966</span>
+          </a>
+        </aside>
+      </section>
+
+      <section class="content-grid" aria-labelledby="details-title">
+        <article class="description">
+          <h2 id="details-title">Popis</h2>
+          <p id="long-description">
+            Garáž je vhodná pre osobné auto alebo ako skladový priestor. Má pohodlný
+            vjazd, pevnú podlahu a uzamykateľnú bránu.
+          </p>
+        </article>
+
+        <dl class="details">
+          <div>
+            <dt>Vnútorná dĺžka</dt>
+            <dd id="length">5,50 m</dd>
+          </div>
+          <div>
+            <dt>Vnútorná šírka</dt>
+            <dd id="width">2,80 m</dd>
+          </div>
+          <div>
+            <dt>Výška vjazdu</dt>
+            <dd id="gate-height">2,00 m</dd>
+          </div>
+          <div>
+            <dt>Dostupnosť</dt>
+            <dd id="availability">Ihneď</dd>
+          </div>
+        </dl>
+      </section>
+    </main>
+
+    <script src="script.js"></script>
+  </body>
+</html>
