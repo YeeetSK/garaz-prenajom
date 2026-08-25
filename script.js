@@ -6,7 +6,7 @@ const GARAGE_LISTING = {
   // Edit phone number here. Spaces are fine.
   phoneNumber: "+421 905 308 966",
 
-  listingType: "Bratislava, Ružinov,
+  listingType: "Bratislava, Ružinov",
   title: "Garáž na prenájom",
   description: "Jednoduchá garáž vhodná na parkovanie alebo uskladnenie vecí.",
   longDescription:
