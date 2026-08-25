@@ -13,9 +13,9 @@ const GARAGE_LISTING = {
     "Garáž je vhodná pre osobné auto alebo ako skladový priestor. Má pohodlný vjazd, pevnú podlahu a uzamykateľnú bránu. Garáž je taktiež novo vymalovaná, a má elektrinu.",
   location: "Ružinov, Ďatelinová 5530/10",
   dimensions: "5,50 × 2,80 m",
-  area: "15,4 m²",
-  length: "5,50 m",
-  width: "2,80 m",
+  area: "18 m²",
+  length: "6,2 m",
+  width: "2,9 m",
   gateHeight: "2,00 m",
   availability: "Ihneď",
 
